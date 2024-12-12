@@ -1,0 +1,101 @@
+html, body {
+    height: 100%;
+    margin: 0;
+ }
+
+.background-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width:100%;
+  background-image: url('homepage.jpg');
+  background-size:cover;
+  background-position:center;
+  z-index:-1;
+}
+
+.content{
+  text-align:left;
+  margin:10px;
+  color:red;
+  font-weight:bold;
+}
+
+.signin{
+position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%); /* Centers the box */
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    padding: 5px; 
+    width: 50%;
+    text-align: left; 
+    z-index: 1; /* Ensure the overlay is above the image */
+    /*border-radius: 8px;*/
+    padding-left: 100px;  /*move the contents inside box to right */
+}
+
+h1{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.input {
+    display: block;                  
+    width: 100%;                     
+}
+
+.input input {
+    background-color: transparent;  
+    height: 40px;                  
+    width: 50%;                   
+    padding: 5px;                 
+    color: white;                  
+    border-radius: 5px;   
+    margin:5px;
+    color:white;
+    
+}
+
+.sign-in{
+    background-color: red;
+    color: white;
+    display: block;
+    cursor: pointer;
+    width: 50%;             /* Match the width of the email and password input boxes */
+    margin-top: 10px;       /* Adds space between the button and other elements */
+    text-align: center;
+    border-radius: 5px;
+    padding:0.1px;
+}
+
+h2:hover{
+   color:lightcoral;
+}
+
+.or-class{
+   width: 50%;                 
+   text-align: center;           
+   margin-bottom: 10px;
+}
+
+.use-signin{
+    background-color: grey;
+    color: white;
+    display: block;              
+    width: 50%;                  /* Button width same as the input fields */
+    margin-top: 10px;            /* Add space above the button */
+    text-align: center;          /* Center text inside the button */
+    border-radius: 5px;          /* Optional: rounded corners for the button */
+    padding: 0.1px;               /* Increase padding for better button size */
+    cursor: pointer; 
+}
+
+.checkbox-container {
+                   /* Align the checkbox and label horizontally */
+    width: 100%;                 /* Make checkbox container the same width as inputs */
+    margin-left: 0;              /* Align checkbox container with the left side of the form */
+    margin-bottom: 10px;         /* Space below the checkbox */
+}
+
